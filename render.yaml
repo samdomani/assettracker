@@ -1,0 +1,10 @@
+﻿services:
+  - type: static
+    name: assettracker
+    env: static
+    rootDir: .
+    buildCommand: npm ci && npm run build
+    staticPublishPath: build
+    envVars:
+      - key: NODE_VERSION
+        value: 20
